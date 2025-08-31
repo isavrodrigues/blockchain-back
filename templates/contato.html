@@ -1,0 +1,20 @@
+{% extends "base.html" %}
+
+{% block title %}Contato{% endblock %}
+
+{% block content %}
+<section class="section">
+  <div class="container">
+    <h1>Contato</h1>
+    <p style="color:var(--muted)">Este formulário é estático. Troque a ação por seu endpoint (ex.: Formspree) para enviar.</p>
+    <form class="card" method="post" action="#">
+      <div style="display:grid; gap:12px">
+        <label>Nome<br><input style="width:100%; padding:10px; border-radius:10px; border:1px solid var(--border); background:transparent; color:var(--text)" placeholder="Seu nome"></label>
+        <label>E-mail<br><input type="email" style="width:100%; padding:10px; border-radius:10px; border:1px solid var(--border); background:transparent; color:var(--text)" placeholder="voce@exemplo.com"></label>
+        <label>Mensagem<br><textarea rows="5" style="width:100%; padding:10px; border-radius:10px; border:1px solid var(--border); background:transparent; color:var(--text)" placeholder="Como podemos ajudar?"></textarea></label>
+        <div><button class="btn primary" type="button">Enviar</button></div>
+      </div>
+    </form>
+  </div>
+</section>
+{% endblock %}

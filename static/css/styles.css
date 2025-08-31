@@ -1,0 +1,126 @@
+:root{
+  --bg:#0b0b0b;
+  --panel:#141414;
+  --text:#f5f5f5;
+  --muted:#b3b3b3;
+  --primary:#c8102e; /* Insper red-ish */
+  --primary-700:#a40d24;
+  --border:#2a2a2a;
+}
+*{box-sizing:border-box}
+html{scroll-behavior:smooth}
+body{
+  margin:0;
+  font-family: Inter, system-ui, -apple-system, Segoe UI, Roboto, Arial, "Noto Sans";
+  background:var(--bg);
+  color:var(--text);
+  line-height:1.6;
+}
+a{color:var(--text); text-decoration:none}
+img{max-width:100%; height:auto; display:block}
+.container{max-width:1100px; margin:0 auto; padding:0 20px}
+.header{
+  position:sticky; top:0; z-index:50;
+  background:rgba(11,11,11,.8); backdrop-filter: blur(8px);
+  border-bottom:1px solid var(--border);
+}
+.nav{display:flex; align-items:center; justify-content:space-between; height:64px}
+.brand{display:flex; align-items:center; gap:12px}
+.brand img {
+  max-height: 40px; 
+  width: auto;   object-fit: contain;
+  border-radius: 0; 
+}
+.brand span{font-weight:800; letter-spacing:.2px}
+.menu{display:flex; gap:18px; align-items:center}
+.menu a{opacity:.9}
+.menu a.active, .menu a:hover{color:var(--primary)}
+.btn{
+  display:inline-flex; align-items:center; justify-content:center;
+  padding:10px 16px; border-radius:12px; border:1px solid var(--border);
+  background:transparent;
+}
+.btn.primary{background:var(--primary); border-color:var(--primary); color:white}
+.hero{
+  padding:72px 0 48px;
+  background:
+    radial-gradient(800px 400px at 10% -10%, rgba(200,16,46,.15), transparent 60%),
+    radial-gradient(800px 400px at 90% -10%, rgba(200,16,46,.08), transparent 60%);
+  border-bottom:1px solid var(--border);
+}
+.hero h1{font-size: clamp(32px, 6vw, 56px); line-height:1.1; margin:0 0 12px}
+.hero p{color:var(--muted); max-width:720px; margin:10px 0 22px}
+.grid{display:grid; gap:20px}
+.grid.cols-3{grid-template-columns:repeat(auto-fit,minmax(260px,1fr))}
+.card{
+  background:var(--panel); border:1px solid var(--border);
+  padding:18px; border-radius:16px;
+}
+.section{padding:56px 0}
+.footer{border-top:1px solid var(--border); color:var(--muted); padding:28px 0}
+.badge{display:inline-block; font-size:12px; padding:4px 8px; border-radius:999px; background:#221; color:#ffccd2; border:1px solid #3a0f16}
+.table{width:100%; border-collapse:collapse}
+.table th,.table td{padding:12px; border-bottom:1px solid var(--border); text-align:left}
+@media(max-width:760px){
+  .menu{display:none}
+  .mobile-toggle{display:inline-flex}
+}
+@media(min-width:761px){
+  .mobile-toggle{display:none}
+}
+.mobile-panel{display:none; border-top:1px solid var(--border); padding:12px 0}
+.mobile-panel a{display:block; padding:10px 0}
+
+/* =================================== */
+/* ESTILOS DO FOOTER          */
+/* =================================== */
+.footer {
+  background: var(--panel); 
+  color: var(--muted);
+  padding: 40px 0 20px 0;
+  border-top: 1px solid var(--border);
+  text-align: center; /* Centraliza todo o conteúdo do footer por padrão */
+}
+
+.footer-container {
+  /* Não precisa mais de flexbox para alinhar, pois tudo será centralizado */
+  margin-bottom: 30px;
+}
+
+.footer-social {
+  /* Remove flex: 1 e min-width, já que não estamos em um layout de colunas */
+  /* E adiciona text-align para centralizar o título e os links */
+  text-align: center; 
+}
+
+.footer-social h4 {
+  color: var(--text);
+  font-size: 20px;
+  margin-top: 0;
+  margin-bottom: 10px;
+}
+
+.social-links {
+  display: flex; 
+  justify-content: center; 
+  gap: 20px;
+}
+
+.social-links a {
+  color: var(--muted);
+  font-size: 24px;
+  transition: color 0.3s ease, transform 0.3s ease;
+}
+
+.social-links a:hover {
+  color: var(--primary);
+  transform: translateY(-3px);
+}
+
+.copyright {
+  text-align: center;
+  font-size: 14px;
+  color: #777;
+  padding-top: 20px;
+  border-top: 1px solid var(--border);
+}

@@ -1,0 +1,29 @@
+{% extends "base.html" %}
+{% block title %}Sobre{% endblock %}
+{% block content %}
+<section class="section">
+  <div class="container">
+    <h1>Sobre</h1>
+    <p style="color:var(--muted)">Missão: promover estudo e projetos práticos em tecnologias descentralizadas com ética, colaboração e pesquisa aplicada.</p>
+    <div class="grid cols-3">
+      <div class="card"><h3>Missão</h3><p>Estudar, aplicar e difundir conhecimento em Blockchain e Web3.</p></div>
+      <div class="card"><h3>Atividades</h3><p>Grupos de estudo, talks, hackathons, workshops.</p></div>
+      <div class="card"><h3>Participação</h3><p>Aberto a estudantes de todas as áreas e níveis.</p></div>
+    </div>
+  </div>
+</section>
+
+<section class="section">
+    <div class="container">
+        <h2>Nossa Equipe</h2>
+        <div class="grid cols-3">
+            {% for membro in time %}
+            <div class="card">
+                <h3>{{ membro.nome }}</h3>
+                <p style="color:var(--muted)">{{ membro.cargo }}</p>
+            </div>
+            {% endfor %}
+        </div>
+    </div>
+</section>
+{% endblock %}

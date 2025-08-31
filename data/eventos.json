@@ -1,0 +1,18 @@
+[
+  {
+    "data": "2025-10-20",
+    "titulo": "Semana Blockchain Insper 2025",
+    "local": "Auditório Principal",
+    "descricao": "Nossa semana anual com palestras, painéis e competições.",
+    "imagem": "https://via.placeholder.com/400x200.png?text=Evento+Futuro",
+    "acao_texto": "Inscreva-se"
+  },
+  {
+    "data": "2025-05-15",
+    "titulo": "Workshop de Smart Contracts",
+    "local": "Laboratório 2",
+    "descricao": "Um evento prático sobre o desenvolvimento de contratos inteligentes utilizando Solidity na rede Ethereum.",
+    "imagem": "https://via.placeholder.com/400x200.png?text=Evento+Passado",
+    "acao_texto": "Ver Material"
+  }
+]

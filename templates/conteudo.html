@@ -1,0 +1,34 @@
+{% extends "base.html" %}
+{% block title %}Conteúdo{% endblock %}
+{% block content %}
+<section class="section">
+  <div class="container">
+    <h1>Blog & Notícias</h1>
+    <p style="color:var(--muted)">Atualizações sobre blockchain, cripto e tecnologia.</p>
+    <div class="grid cols-3">
+      {% for post in blog %}
+      <div class="card">
+        <h3>{{ post.titulo }}</h3>
+        <p><small>{{ post.data }}</small></p>
+        <p style="color:var(--muted)">{{ post.descricao }}</p>
+      </div>
+      {% endfor %}
+    </div>
+  </div>
+</section>
+
+<section class="section">
+    <div class="container">
+        <h2>Bibliografia Básica</h2>
+        <p style="color:var(--muted)">Conteúdos essenciais para seus estudos.</p>
+        <div class="grid cols-3">
+            {% for item in bibliografia %}
+            <div class="card">
+                <h3>{{ item.titulo }}</h3>
+                <p style="color:var(--muted)">{{ item.descricao }}</p>
+            </div>
+            {% endfor %}
+        </div>
+    </div>
+</section>
+{% endblock %}

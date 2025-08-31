@@ -1,0 +1,14 @@
+[
+  {
+    "titulo": "Pesquisa",
+    "descricao": "Revisão de literatura, experimentos e publicações."
+  },
+  {
+    "titulo": "Dev Web3",
+    "descricao": "Contratos em Solidity/Rust, dApps, segurança."
+  },
+  {
+    "titulo": "Comunidade",
+    "descricao": "Eventos, parcerias e mentoria."
+  }
+]
