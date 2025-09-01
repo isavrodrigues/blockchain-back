@@ -124,3 +124,7 @@ img{max-width:100%; height:auto; display:block}
   padding-top: 20px;
   border-top: 1px solid var(--border);
 }
+
+h1 > span{
+  color: var(--primary)
+}
