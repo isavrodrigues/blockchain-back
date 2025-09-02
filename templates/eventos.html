@@ -8,7 +8,7 @@
       <div class="grid cols-3">
         {% for evento in futuros %}
         <div class="card">
-          <img src="{{ evento.imagem }}" alt="{{ evento.titulo }}" style="border-radius: 8px; margin-bottom: 12px;">
+          <img src="/static/images/teste.png" alt="{{ evento.titulo }}" style="border-radius: 8px; margin-bottom: 12px;">
           <h3>{{ evento.titulo }}</h3>
           <p><small>{{ evento.data }} | {{ evento.local }}</small></p>
           <p style="color:var(--muted)">{{ evento.descricao }}</p>
@@ -29,7 +29,7 @@
           <div class="grid cols-3">
             {% for evento in passados %}
             <div class="card">
-              <img src="{{ evento.imagem }}" alt="{{ evento.titulo }}" style="border-radius: 8px; margin-bottom: 12px; filter: grayscale(1);">
+              <img src="/static/images/teste.png" alt="{{ evento.titulo }}" style="border-radius: 8px; margin-bottom: 12px; filter: grayscale(1);">
               <h3>{{ evento.titulo }}</h3>
               <p><small>{{ evento.data }} | {{ evento.local }}</small></p>
               <p style="color:var(--muted)">{{ evento.descricao }}</p>
